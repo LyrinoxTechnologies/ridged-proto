@@ -367,4 +367,3 @@ server.Done() <-chan struct{}
 ## License
 
 See [LICENSE](LICENSE) file.
->>>>>>> 92e41a8 (rdgproto v 0.1)

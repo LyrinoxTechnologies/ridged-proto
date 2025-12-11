@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-# ridged-proto
-=======
 # ridged-proto
 
 A binary-only protocol **framework** in Go for building custom communication protocols between different client platforms (CLI, Web apps, etc.) and a central server. rdgproto provides the protocol infrastructure - you define your own message types and payloads.

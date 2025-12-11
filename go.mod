@@ -1,3 +1,3 @@
 module github.com/LyrinoxTechnologies/ridged-proto
 
-go 1.21
+go 1.25

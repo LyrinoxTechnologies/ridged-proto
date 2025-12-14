@@ -85,6 +85,8 @@ jobs:
       - name: Run Gosec Security Scanner
         uses: securego/gosec@master
         with:
+          # G104: Unhandled Close() errors in deferred cleanup - errors are non-actionable in cleanup paths
+          # G115: Integer overflow on int64 to uint32 - protocol lengths are validated before conversion
           args: -exclude=G104,G115 ./...
 
       - name: Run govulncheck

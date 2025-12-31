@@ -30,4 +30,4 @@ go.work.sum
 # Editor/IDE
 # .idea/
 # .vscode/
-benchmark/login.pb.go
+benchmark/*

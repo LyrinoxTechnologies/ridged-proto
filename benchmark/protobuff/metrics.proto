@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package protobuff;
+
+option go_package = "github.com/LyrinoxTechnologies/ridged-proto/benchmark/protobuff";
+
+// Numeric-heavy payload (Protobuf strength case)
+message Metrics {
+  uint64 a = 1;
+  uint64 b = 2;
+  uint64 c = 3;
+  uint64 d = 4;
+  uint64 e = 5;
+}

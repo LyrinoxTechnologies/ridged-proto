@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package protobuff;
+
+option go_package = "github.com/LyrinoxTechnologies/ridged-proto/benchmark/protobuff";
+
+// Large binary payload (streaming comparison)
+message Blob {
+  bytes data = 1;
+}

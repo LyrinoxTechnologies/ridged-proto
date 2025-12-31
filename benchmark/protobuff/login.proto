@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package protobuff;
+
+option go_package = "github.com/LyrinoxTechnologies/ridged-proto/benchmark/protobuff";
+
+// Typical authentication / control-plane message
+message LoginRequest {
+  string username = 1;
+  string password = 2;
+  string client_id = 3;
+}

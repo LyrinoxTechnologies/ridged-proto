@@ -32,5 +32,4 @@ go.work.sum
 # .vscode/
 
 benchmark/*.txt
-benchmark/protobuff/*.proto
-benchmark/*.py
+benchmark/*.pb.go

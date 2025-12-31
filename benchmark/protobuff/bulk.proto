@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package protobuff;
+
+option go_package = "github.com/LyrinoxTechnologies/ridged-proto/benchmark/protobuff";
+
+// Repeated field benchmark (allocation + scaling test)
+message BulkData {
+  repeated uint32 values = 1;
+}

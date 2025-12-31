@@ -21,17 +21,13 @@ Then **rdgproto is for you.**
 
 Independent benchmarks comparing rdgproto vs Google Protocol Buffers on identical message payloads:
 
-| Metric | Protocol Buffers | rdgproto | Improvement |
-|--------|-----------------|----------|-------------|
-| **Wire size** | 69 bytes | **66 bytes** | **4.35% smaller** |
-| **Marshal speed** | 156.9 ns/op | **90.83 ns/op** | **42% faster** |
-| **Marshal allocations** | 1 alloc/op | **1 alloc/op** | **Equal efficiency** |
-| **Unmarshal speed** | 274.6 ns/op | **230.2 ns/op** | **16% faster** |
-| **Unmarshal allocations** | 4 allocs/op | 7 allocs/op | Competitive |
+![Benchmark Chart](.github/assets/benchmark_chart.png)
 
 *Benchmarks run on Intel Core i5-6500 @ 3.20GHz. See [benchmark/](benchmark/) for details and reproduction steps.*
 
 **Key takeaway:** rdgproto produces smaller messages on the wire and serializes/deserializes faster than Protocol Buffers, without requiring code generation or external dependencies.
+
+**Exceptions:** Rdgproto performs slightly worse than Protocol Buffers on extremely large payloads, but chunked streaming and buffer pooling improvements are planned to surpass Protobuf in these scenarios. Transport benchmarks show similar performance, serving primarily as sanity checks.
 
 ## Installation
 
